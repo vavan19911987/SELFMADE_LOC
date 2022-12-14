@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__user {
+    display: flex;
+    align-items: center;
+    &_notification {
+      margin-right: 6px;
+      &_img2 {
+        position: relative;
+        right: 5px;
+        top: -2px;
+      }
+    }
+    &_name {
+      margin-right: 6px;
+
+    }
+  }
+
+}
+.head {
+  margin-top: 28px;
+
+}
