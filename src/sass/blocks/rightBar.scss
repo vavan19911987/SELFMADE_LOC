@@ -1,0 +1,221 @@
+.wrapper {
+  max-width: 940px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rightBar {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+  &__info {
+    //min-width: 646px;
+    //min-height: 372px;
+    background: #F0F0F0;
+    border-radius: 15px;
+    margin-right: 20px;
+
+    &_hed {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &_user {
+      display: flex;
+      align-items: center;
+    }
+    &_img {
+      margin: 16px 22px 19px 20px;
+      width: 71px;
+      height: 71px;
+    }
+    &_top {
+      width: 37.69px;
+      height: 20.24px;
+      background: #EF5DA8;
+      border-radius: 46.669px;
+      color: #FFFFFF;
+      font-size: 9.92957px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 28px;
+      //@include bold();
+      font-family: 'Gilroy-Regular', sans-serif;
+    }
+    &_text {
+      //@include bold();
+      font-family: 'Gilroy-Bold', sans-serif;
+    }
+
+
+  }
+  &__liner {
+    //width: 646px;
+    opacity: 0.1;
+    border-bottom: 1px solid #000000;
+  }
+
+  &__foot {
+    width: 940px;
+    height: 236px;
+    //background: #F0F0F0;
+    margin-top: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+  }
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
+
+  &__h1 {
+    font-size: 19px;
+    line-height: 23px;
+    color: #2F2F2F;
+    margin-top: 29px;
+    margin-left: 21px;
+    margin-bottom: 10px;
+    //@include sem();
+    font-family: 'Gilroy-Semibold', sans-serif;
+    span {
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      color: #EF5DA8;
+      //@include reg();
+      font-family: 'Gilroy-Semibold', sans-serif;
+    }
+  }
+  &__self {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-around;
+    margin: 0 20px 30px 21px;
+
+    &_item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 115px;
+      height: 66px;
+      background: #FFFFFF;
+      border-radius: 15px;
+      margin-right: 6px;
+
+
+      span {
+        font-size: 13px;
+        line-height: 15px;
+        color: #868686;
+        //@include med();
+        font-family: 'Gilroy-Medium', sans-serif;
+      }
+      &:nth-child(2) .rightBar__self_sub {
+        background: #F178B6;
+      }
+      &:nth-child(3) .rightBar__self_sub {
+        background: #3AC49F;
+      }
+      &:nth-child(4) .rightBar__self_sub {
+        background: #5D5FEF;;
+      }
+      &:nth-child(5) .rightBar__self_sub {
+        background: #EF5DA8;
+      }
+
+    }
+
+    &_sub {
+      width: 22px;
+      height: 22px;
+      background: #A5A6F6;
+      border-radius: 63px;
+      margin-right: 9px;
+
+
+    }
+
+
+  }
+  &__disk {
+    display: flex;
+    flex-direction: column;
+    margin: 22px;
+    &_text {
+      font-size: 19px;
+      color: #2F2F2F;
+      //@include bold();
+      font-family: 'Gilroy-Bold', sans-serif;
+    }
+    &_MB {
+      display: flex;
+      margin-top: 13px;
+      align-items: center;
+      flex-wrap: wrap;
+      p {
+        //@include sem();
+        font-family: 'Gilroy-Semibold', sans-serif;
+        font-size: 16px;
+        color: #868686;
+        margin-right: 13px;
+      }
+      span {
+        margin-right: 15px;
+        font-size: 16px;
+        line-height: 19px;
+        color: #2F2F2F;
+        //@include sem();
+        font-family: 'Gilroy-Semibold', sans-serif;
+      }
+    }
+
+
+    &_place {
+      width: 398px;
+      height: 15px;
+      background-color: #C7C8FF;
+      border-radius: 63px;
+      position: relative;
+      div {
+        font-family: 'Gilroy-Semibold', sans-serif;
+        font-size: 12px;
+        color: #5D5FEF;
+        text-align: end;
+        position: relative;
+        bottom: 14px;
+        right: 10px;
+      }
+      span {
+        border-radius: 63px;
+        display: block;
+        width: 60%;
+        height: 100%;
+        background: #5D5FEF;
+        animation: rights 9s infinite;
+      }
+
+    }
+    @keyframes rights {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 60%;
+      }
+
+    }
+
+
+  }
+
+}

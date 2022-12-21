@@ -1,0 +1,133 @@
+ @media (max-width: 575px) {
+   .rightBar {
+     justify-content: center;
+     align-items: center;
+
+     &__self {
+      justify-content: space-evenly;
+      &_item {
+        margin-top: 6px;
+      }
+    }
+     &__info {
+       margin-right: 0;
+     }
+     &__disk {
+       &_text {
+         text-align: center;
+       }
+       &_MB {
+         justify-content: center;
+       }
+     }
+   }
+
+   .leftBar {
+     //display: none;
+     position: absolute;
+     right: 100%;
+   }
+   .header {
+     justify-content: center;
+     &__logo {
+       margin-right: 50px;
+       margin-left: 33px;
+     }
+   }
+   .hamburger  {
+     span {
+       display: block;
+     }
+   }
+
+   .diagram {
+     margin-top: 20px;
+   }
+   .foot {
+     .text {
+       font-size: 16px;
+     }
+     .text2 {
+       font-size: 11px;
+       top: 11px;
+     }
+     &__head1 {
+       width: 230px;
+     }
+     &__head2 {
+       width: 90px;
+     }
+
+     &__head3 {
+       width: 90px;
+     }
+     &__tab{
+       &_body1 {
+         width: 230px;
+       }
+       &_body2 {
+         width: 90px;
+       }
+       &_body3 {
+         width: 90px;
+       }
+     }
+   }
+
+ }
+ @media (max-width: 570px) {
+   .rightBar {
+
+     &__disk {
+
+       &_MB {
+         //display: none;
+       }
+       &_place {
+         width: 80%;
+         div {
+           display: none;
+         }
+       }
+     }
+     @keyframes rights {
+       0% {
+         width: 0%;
+       }
+       100% {
+         width: 40%;
+       }
+
+     }
+
+   }
+   .foot {
+     display: none;
+   }
+ }
+
+ @media (max-width: 350px) {
+   .header {
+
+     &__logo {
+       margin-bottom: 15px;
+
+     }
+     &__user {
+       margin-right: 0;
+     }
+   }
+   .rightBar {
+     &__self {
+       &_item {
+         margin-top: 6px;
+       }
+     }
+     &__h1 {
+    font-size: 17px;
+     }
+
+   }
+
+
+ }

@@ -1,13 +1,35 @@
 .head {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 28px;
-
+  margin: 28px 20px;
+}
+.hamburger {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  height: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  //translate: .6s all;
+  cursor: pointer;
+  z-index: 900;
+  span {
+    display: none;
+    width: 30px;
+    height: 3px;
+    background: #000000;
+  }
+  .long {
+    width: 36px;
+  }
 }
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   &__user {
     display: flex;
     align-items: center;
